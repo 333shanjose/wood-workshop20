@@ -72,7 +72,7 @@ app.post('/admin/addproduct',upload.single('image'),(req,res)=>{
     console.log(res)
      
 })
-   res.json('hhh)
+   res.send('hhh)
 })
  app.post('/admin/getp',async(req,res)=>{
      console.log('nn')
