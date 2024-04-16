@@ -48,7 +48,7 @@ app.use(session({secret:'key',resave:false,saveUninitialized: false,cookie:{maxA
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {               
-      cb(null, '../client/public/images')
+      cb(null, './build/images')
     },
     filename: function (req, file, cb) {
       const uniqueSuffix = Date.now()
